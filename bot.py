@@ -11,26 +11,12 @@ bot = commands.Bot(command_prefix='~')
 bot.description = 'ooga booga(lol ur a nigger if ur reading this:flan:) the symbol is ~. that is the key. the secret to a long and full life. heh, not that you\'d do anything with a long and full life. lol. u even got a gf? and ur what? 21? 23? 27!? jesus christ lmfao anyway heres how to use me or whatever'
 topics = []
 in_db  = []
-#index = 0 
 
 db = open("database","a+")
 db.close()
 
    
 ###   functions   ####   
-def setindex(x):
-    print("index set as ", x)
-    index = x
-    return index
-def getindex():
-    return index
-def randindex():
-    ind = getindex()
-    while ind is getindex():
-        ind = random.randing(0,len(topics)-1)
-    print("new index",ind)
-    setindex(ind)
-    return ind
 def randomize():
     #old = topics[0]
     random.shuffle(topics)
@@ -50,8 +36,9 @@ def readdata():
     print()
 
     ###   commands   ###
-@bot.command()
+#@bot.command()
 async def watchclock(ctx):
+    """ listen guys this is harder than it looks and doesnt work at all so dont even use it ok """
     while True:
         await asyncio.sleep(1)#might be much
         #print (time.clock())
@@ -114,8 +101,5 @@ print('connected')
 bot.run(token)
 print('disconnected')
 
-#@bot.event
-#async def on_ready():
-#    print("on ready...")
-#    asyncio.get_event_loop().run_until_complete(watchclock())
+# kkk 1488 heil hitler fuck the new world order
     
